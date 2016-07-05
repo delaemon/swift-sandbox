@@ -2,11 +2,11 @@
 import UIKit
 import XCPlayground
 
-func gcd<T>(a:Int, b:Int) Int {
+func gcd(a:Int, b:Int) -> Int {
     if b == 0 {
         return a
     }
-    return gcd(b, a % b)
+    return gcd(a: b, b: a % b)
 }
 
-gcd(999, 300)
+gcd(a: 999, b: 300)
